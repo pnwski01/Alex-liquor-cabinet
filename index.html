@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Liquor Cabinet</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Liquor Cabinet</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Categories</h2>
+            <div id="categories">
+                <button class="category-btn" onclick="showSubcategories('whiskey')">Whiskey</button>
+                <button class="category-btn" onclick="showSubcategories('gin')">Gin</button>
+                <button class="category-btn" onclick="showSubcategories('others')">Others</button>
+                <button class="category-btn" onclick="showSubcategories('amaro')">Amaro et al.</button>
+               <!-- <button class="category-btn" onclick="showSubcategories('beer')">Beer</button> -->
+            </div>
+        </section>
+        <section>
+            <div id="subcategories">
+                <!-- Subcategory buttons will be dynamically added here -->
+            </div>
+        </section>
+        <section>
+            <div id="subcategories2">
+                <!-- Subcategory buttons will be dynamically added here -->
+            </div>
+        </section>
+        <section>
+            <h3>Tipples</h3>
+            <ul id="drinks-list">
+                <!-- Drinks will be displayed here -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <button id="hardcore-btn" style="border: none; background: none;">
+                <img src="whiskeyman.jpg" alt="WooHoo!" width="300" height="300">
+            </button>
+        </div>
+        <button id="retired-btn">Retired Friends</button>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
